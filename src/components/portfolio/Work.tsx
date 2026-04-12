@@ -10,7 +10,7 @@ const projects = [
     tag: "AI Automation",
     title: "Bazaarvoice Agent",
     blurb:
-      "A RAG-based system that automates customer review responses on Bazaarvoice. It ingests past responses to learn brand voice and tone, then drafts contextual replies that match how I'd actually write them. Replaced a manual per-review workflow with one-click generation.",
+      "A RAG-based system that automates customer care on Bazaarvoice. By ingesting historical data, the application learns the exact nuances of our brand voice to draft highly contextual, ready-to-publish replies. This completely replaced a tedious, manual per-review bottleneck with a scalable, one-click workflow.",
     metric: "Manual → automated response drafting",
     status: "Active",
     screenshots: [
@@ -23,8 +23,8 @@ const projects = [
     tag: "Process Design",
     title: "Weekly Intelligence System",
     blurb:
-      "A 19-question query framework feeding NotebookLM to produce weekly social intelligence briefs. Turned a manual 4-hour process into a repeatable 45-minute workflow.",
-    metric: "4hrs → 45min weekly",
+      "A custom pipeline that automatically scrapes targeted web data and feeds the structured text directly into NotebookLM. This instantly synthesizes hours of messy, manual research into actionable, custom strategy playbooks, turning a 4-hour grind into a 45-minute repeatable workflow",
+    metric: "4hrs weekly → 45min as needed",
     status: "Active",
     screenshots: [
       "/screenshots/wis/wis-1.png",
@@ -279,46 +279,46 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
             }}
           >
             <div style={{ minHeight: 0, overflow: "hidden" }}>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
-                gap: "12px",
-                paddingBottom: "40px",
-              }}
-            >
-              {screenshots.map((src, idx) => (
-                <div
-                  key={idx}
-                  onClick={() => setLightbox(src)}
-                  style={{
-                    borderRadius: "6px",
-                    overflow: "hidden",
-                    border: "1px solid var(--border)",
-                    background: "rgba(255,255,255,0.02)",
-                    cursor: "zoom-in",
-                    transition: "border-color 0.3s",
-                  }}
-                  onMouseEnter={(e) =>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(3, 1fr)",
+                  gap: "12px",
+                  paddingBottom: "40px",
+                }}
+              >
+                {screenshots.map((src, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => setLightbox(src)}
+                    style={{
+                      borderRadius: "6px",
+                      overflow: "hidden",
+                      border: "1px solid var(--border)",
+                      background: "rgba(255,255,255,0.02)",
+                      cursor: "zoom-in",
+                      transition: "border-color 0.3s",
+                    }}
+                    onMouseEnter={(e) =>
                     ((e.currentTarget as HTMLDivElement).style.borderColor =
                       "rgba(212,120,47,0.4)")
-                  }
-                  onMouseLeave={(e) =>
+                    }
+                    onMouseLeave={(e) =>
                     ((e.currentTarget as HTMLDivElement).style.borderColor =
                       "var(--border)")
-                  }
-                >
-                  <Image
-                    src={src}
-                    alt={`${title} screenshot ${idx + 1}`}
-                    width={600}
-                    height={400}
-                    style={{ width: "100%", height: "auto", display: "block" }}
-                    unoptimized
-                  />
-                </div>
-              ))}
-            </div>
+                    }
+                  >
+                    <Image
+                      src={src}
+                      alt={`${title} screenshot ${idx + 1}`}
+                      width={600}
+                      height={400}
+                      style={{ width: "100%", height: "auto", display: "block" }}
+                      unoptimized
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         )}
