@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Austin W. — Community & Social Intelligence",
+  title: "Austin R — Community & Social Management",
   description:
     "Community manager and social strategist who builds the tools he wishes existed. Working at the intersection of social intelligence, AI tooling, and community systems.",
 };

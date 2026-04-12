@@ -49,7 +49,7 @@ export function Hero() {
                 margin: "0 0 36px",
               }}
             >
-              Community &amp; Social Intelligence
+              Community &amp; Social Management
             </p>
 
             <h1
@@ -63,10 +63,10 @@ export function Hero() {
                 fontWeight: 400,
               }}
             >
-              I build systems that make{" "}
-              <em style={{ color: "var(--accent)", fontStyle: "italic" }}>social</em>{" "}
-              work{" "}
-              <em style={{ color: "var(--accent)", fontStyle: "italic" }}>smarter</em>
+              <em style={{ color: "var(--accent)", fontStyle: "italic" }}>Less</em>{" "}
+              guesswork.<br />
+              <em style={{ color: "var(--accent)", fontStyle: "italic" }}>More</em>{" "}
+              framework. Building systems that scale social.
             </h1>
 
             <p
@@ -79,10 +79,7 @@ export function Hero() {
                 margin: 0,
               }}
             >
-              Community manager and social strategist who builds the tools he
-              wishes existed. Currently on the SocialX team at Clearlink,
-              working at the intersection of social intelligence, AI tooling,
-              and community systems.
+              Forward-thinking social copywriter and strategist building bespoke applications to solve complex community challenges. I leverage AI tooling and social intelligence to create scalable systems that amplify brand impact.
             </p>
           </div>
 
