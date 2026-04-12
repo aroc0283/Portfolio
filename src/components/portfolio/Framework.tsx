@@ -6,21 +6,21 @@ import { SectionLabel } from "./SectionLabel";
 const pillars = [
   {
     num: "01",
-    name: "Analyze",
+    name: "Smart Social Listening",
     description:
-      "Social listening, sentiment mapping, and trend velocity. Understanding what's happening before deciding what to do about it.",
+      "Instead of guessing what the timeline wants, I use custom tools to organize messy social chatter. I track the data to spot trends early, ensuring we make strategy decisions based on facts, not just gut feelings.",
   },
   {
     num: "02",
-    name: "Resonate",
+    name: "Scaling Brand Voice",
     description:
-      "Content strategy and campaign architecture. Building narratives that meet people where they already are.",
+      "Good copy has to scale without losing its soul. I build systems that learn exactly how a brand speaks. By letting AI handle the routine drafting, I free up my time to focus on the big, creative campaign hooks that require a human touch",
   },
   {
     num: "03",
-    name: "Engage",
+    name: "Meaningful Engagement",
     description:
-      "Community management and customer care. Turning conversations into relationships and relationships into trust.",
+      "Community management shouldn't mean drowning in manual replies. I automate the busywork of standard customer care so that my energy goes toward the actual human-to-human relationship building that turns followers into loyal fans.",
   },
 ];
 
