@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Work } from "@/components/portfolio/Work";
 
 export default function AltPage() {
   return (
@@ -10,9 +11,23 @@ export default function AltPage() {
         background: "var(--bg)",
         minHeight: "100dvh",
         position: "relative",
-        overflow: "hidden",
       }}
     >
+      <style>{`
+        @media (max-width: 640px) {
+          .alt-hero-name {
+            flex-direction: column !important;
+            gap: 0 !important;
+            align-items: center !important;
+            top: 40% !important;
+          }
+          .alt-hero-name span {
+            margin-left: 0 !important;
+            font-size: clamp(48px, 18vw, 72px) !important;
+          }
+        }
+      `}</style>
+
       {/* ── Navigation ─────────────────────────────────────────────── */}
       <nav
         style={{
@@ -58,11 +73,11 @@ export default function AltPage() {
           gap: "0px",
         }}
       >
-        {/* Hero unit — portrait + name share one coordinate system so they
-            stay locked together at any zoom level or viewport size */}
+        {/* Hero unit — portrait + name share one coordinate system */}
         <div style={{ position: "relative", height: "58vh" }}>
           {/* Name — positioned relative to portrait, behind it */}
           <div
+            className="alt-hero-name"
             style={{
               position: "absolute",
               top: "68%",
@@ -192,6 +207,9 @@ export default function AltPage() {
           </p>
         </div>
       </section>
+
+      {/* ── Selected Work ──────────────────────────────────────────── */}
+      <Work />
     </main>
   );
 }
