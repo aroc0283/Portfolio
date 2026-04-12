@@ -169,7 +169,7 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
         data-delay={String(delay)}
         style={{
           borderTop: "1px solid var(--border)",
-          transition: "border-color 0.4s",
+          transition: "border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1)",
           borderColor: hovered ? "rgba(212,120,47,0.2)" : undefined,
         }}
         onMouseEnter={() => setHovered(true)}
@@ -182,9 +182,9 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
             gridTemplateColumns: "160px 1fr 180px",
             gap: "32px",
             padding: "40px 0",
-            paddingLeft: hovered ? "20px" : "0",
             cursor: "default",
-            transition: "padding-left 0.4s",
+            transform: hovered ? "translateX(20px)" : "translateX(0)",
+            transition: "transform 0.45s cubic-bezier(0.4, 0, 0.2, 1)",
           }}
         >
           {/* Tag */}
@@ -272,18 +272,19 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
         {screenshots && screenshots.length > 0 && (
           <div
             style={{
-              overflow: "hidden",
-              maxHeight: hovered ? "260px" : "0",
+              display: "grid",
+              gridTemplateRows: hovered ? "1fr" : "0fr",
               opacity: hovered ? 1 : 0,
-              transition: "max-height 0.5s ease, opacity 0.4s ease",
-              paddingBottom: hovered ? "40px" : "0",
+              transition: "grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease",
             }}
           >
+            <div style={{ minHeight: 0, overflow: "hidden" }}>
             <div
               style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(3, 1fr)",
                 gap: "12px",
+                paddingBottom: "40px",
               }}
             >
               {screenshots.map((src, idx) => (
@@ -317,6 +318,7 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
                   />
                 </div>
               ))}
+            </div>
             </div>
           </div>
         )}
