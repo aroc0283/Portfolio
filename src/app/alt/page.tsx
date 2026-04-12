@@ -1,15 +1,18 @@
 import Link from "next/link";
-import { Hero } from "@/components/portfolio/Hero";
-import { Work } from "@/components/portfolio/Work";
-import { Framework } from "@/components/portfolio/Framework";
-import { Testimonials } from "@/components/portfolio/Testimonials";
-import { Contact } from "@/components/portfolio/Contact";
 
-export default function Page() {
+export default function AltPage() {
   return (
-    <main>
+    <main
+      style={{
+        minHeight: "100dvh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        position: "relative",
+      }}
+    >
       <Link
-        href="/alt"
+        href="/"
         style={{
           position: "fixed",
           top: "16px",
@@ -25,17 +28,21 @@ export default function Page() {
           textDecoration: "none",
           background: "rgba(10,10,10,0.7)",
           backdropFilter: "blur(10px)",
-          transition: "color 0.2s, border-color 0.2s",
         }}
       >
-        Alternative Design
+        Main Design
       </Link>
 
-      <Hero />
-      <Work />
-      <Framework />
-      <Testimonials />
-      <Contact />
+      <p
+        style={{
+          fontSize: "13px",
+          textTransform: "uppercase",
+          letterSpacing: "0.15em",
+          color: "var(--faint)",
+        }}
+      >
+        Alternative design — build it out here.
+      </p>
     </main>
   );
 }

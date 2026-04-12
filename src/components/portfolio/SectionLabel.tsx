@@ -7,17 +7,18 @@ export function SectionLabel({ children }: SectionLabelProps) {
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
-        gap: "16px",
         marginBottom: "56px",
+        gap: "5px",
       }}
     >
       <span
         style={{
-          fontSize: "11px",
+          fontSize: "22px",
           textTransform: "uppercase",
           letterSpacing: "0.2em",
-          color: "var(--faint)",
+          color: "var(--text)",
           whiteSpace: "nowrap",
         }}
       >
@@ -25,7 +26,7 @@ export function SectionLabel({ children }: SectionLabelProps) {
       </span>
       <div
         style={{
-          flex: 1,
+          width: "100%",
           height: "1px",
           background: "var(--faint)",
           opacity: 0.4,
