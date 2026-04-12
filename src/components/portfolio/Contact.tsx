@@ -70,7 +70,7 @@ export function Contact() {
           </a>
 
           <a
-            href="https://calendly.com/REPLACE"
+            href="https://calendly.com/austin-rockne"
             target="_blank"
             rel="noopener noreferrer"
             style={{
