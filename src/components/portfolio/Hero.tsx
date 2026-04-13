@@ -119,29 +119,11 @@ export function Hero() {
             className="hero-photo"
             style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
           >
-            <div style={{ position: "relative", width: "408px" }}>
+            <div style={{ position: "relative", width: "100%" }}>
               {/* Accent backdrop */}
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  borderRadius: "20px",
-                  background: "var(--accent)",
-                  transform: "translate(14px, 14px)",
-                  zIndex: 0,
-                }}
-              />
+              <div style={{ position: "absolute", inset: 0, borderRadius: "20px", background: "var(--accent)", transform: "translate(14px, 14px)", zIndex: 0 }} />
               {/* Photo */}
-              <div
-                style={{
-                  position: "relative",
-                  zIndex: 1,
-                  width: "408px",
-                  borderRadius: "20px",
-                  overflow: "hidden",
-                  border: "1px solid var(--border)",
-                }}
-              >
+              <div style={{ position: "relative", zIndex: 1, width: "100%", borderRadius: "20px", overflow: "hidden", border: "1px solid var(--border)" }}>
                 <Image
                   src="/headshot.png"
                   alt="Austin Rockne"
