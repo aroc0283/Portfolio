@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useLocalTime } from "@/hooks/useLocalTime";
+import { FlickeringGrid } from "@/components/ui/flickering-grid";
 
 export function Hero() {
   const time = useLocalTime();
@@ -16,6 +17,16 @@ export function Hero() {
         flexDirection: "column",
       }}
     >
+      {/* Flickering grid background */}
+      <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+        <FlickeringGrid
+          color="rgb(212, 120, 47)"
+          maxOpacity={0.12}
+          flickerChance={0.08}
+          squareSize={4}
+          gridGap={6}
+        />
+      </div>
       {/* Main content */}
       <div
         className="container hero-content"
@@ -26,6 +37,8 @@ export function Hero() {
           justifyContent: "center",
           paddingTop: "100px",
           paddingBottom: "60px",
+          position: "relative",
+          zIndex: 1,
         }}
       >
         {/* Two-column grid — label is inside left col so photo tops align */}
@@ -79,7 +92,7 @@ export function Hero() {
                 margin: 0,
               }}
             >
-              Forward-thinking social copywriter and strategist building bespoke applications to solve complex community challenges. I leverage AI tooling and social intelligence to create scalable systems that amplify brand impact.
+              Forward-thinking social copywriter and strategist building bespoke applications to solve complex community challenges. Leveraging AI tooling and social intelligence to create scalable systems that amplify brand impact.
             </p>
           </div>
 
@@ -127,6 +140,8 @@ export function Hero() {
       <div
         className="container hero-meta"
         style={{
+          position: "relative",
+          zIndex: 1,
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
