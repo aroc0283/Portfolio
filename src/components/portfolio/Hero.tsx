@@ -119,23 +119,39 @@ export function Hero() {
             className="hero-photo"
             style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
           >
-            <div
-              style={{
-                width: "408px",
-                borderRadius: "6px",
-                overflow: "hidden",
-                border: "1px solid var(--border)",
-              }}
-            >
-              <Image
-                src="/headshot.png"
-                alt="Austin Rockne"
-                width={798}
-                height={1007}
-                style={{ width: "100%", height: "auto", display: "block" }}
-                priority
-                unoptimized
+            <div style={{ position: "relative", width: "408px" }}>
+              {/* Accent backdrop */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  borderRadius: "20px",
+                  background: "var(--accent)",
+                  transform: "translate(14px, 14px)",
+                  zIndex: 0,
+                }}
               />
+              {/* Photo */}
+              <div
+                style={{
+                  position: "relative",
+                  zIndex: 1,
+                  width: "408px",
+                  borderRadius: "20px",
+                  overflow: "hidden",
+                  border: "1px solid var(--border)",
+                }}
+              >
+                <Image
+                  src="/headshot.png"
+                  alt="Austin Rockne"
+                  width={798}
+                  height={1007}
+                  style={{ width: "100%", height: "auto", display: "block" }}
+                  priority
+                  unoptimized
+                />
+              </div>
             </div>
             <p
               style={{
