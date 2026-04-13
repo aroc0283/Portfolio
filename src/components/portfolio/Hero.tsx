@@ -1,12 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useLocalTime } from "@/hooks/useLocalTime";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 
 export function Hero() {
-  const time = useLocalTime();
-
   return (
     <section
       id="hero"
@@ -17,8 +14,19 @@ export function Hero() {
         flexDirection: "column",
       }}
     >
-      {/* Flickering grid background */}
-      <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+      {/* Flickering grid background — extends below hero and fades out */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: "calc(100% + 320px)",
+          zIndex: 0,
+          maskImage: "linear-gradient(to bottom, black 55%, transparent 100%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 55%, transparent 100%)",
+        }}
+      >
         <FlickeringGrid
           color="rgb(212, 120, 47)"
           maxOpacity={0.12}
@@ -58,7 +66,7 @@ export function Hero() {
                 fontSize: "12px",
                 textTransform: "uppercase",
                 letterSpacing: "0.18em",
-                color: "var(--faint)",
+                color: "var(--muted)",
                 margin: "0 0 36px",
               }}
             >
@@ -136,38 +144,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Bottom meta row */}
-      <div
-        className="container hero-meta"
-        style={{
-          position: "relative",
-          zIndex: 1,
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          paddingBottom: "48px",
-          fontSize: "13px",
-          color: "var(--faint)",
-          letterSpacing: "0.04em",
-        }}
-      >
-        <span>Salt Lake City, UT</span>
-        <span>{time ? `${time} MST` : ""}</span>
-      </div>
-
-      {/* Scroll line */}
-      <div
-        className="scroll-line"
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: "50%",
-          transform: "translateX(-50%)",
-          width: "1px",
-          height: "80px",
-          background: "linear-gradient(to bottom, rgba(212,120,47,0.4), transparent)",
-        }}
-      />
     </section>
   );
 }
