@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export function Hero() {
+  useScrollReveal();
   return (
     <section
       id="hero"
@@ -54,33 +56,37 @@ export function Hero() {
           className="hero-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 340px",
-            gap: "56px",
+            gridTemplateColumns: "1fr 408px",
+            gap: "67px",
             alignItems: "start",
           }}
         >
           {/* Left: label → headline → subhead */}
           <div>
             <p
+              data-reveal
+              data-delay="1"
               style={{
-                fontSize: "12px",
+                fontSize: "14.4px",
                 textTransform: "uppercase",
                 letterSpacing: "0.18em",
                 color: "var(--muted)",
-                margin: "0 0 36px",
+                margin: "0 0 43px",
               }}
             >
               Community &amp; Social Management
             </p>
 
             <h1
+              data-reveal
+              data-delay="2"
               style={{
                 fontFamily: "var(--font-display), serif",
-                fontSize: "clamp(38px, 5.5vw, 76px)",
+                fontSize: "clamp(46px, 6.6vw, 91px)",
                 lineHeight: 1.08,
                 letterSpacing: "-0.03em",
                 color: "var(--text)",
-                margin: "0 0 28px",
+                margin: "0 0 34px",
                 fontWeight: 400,
               }}
             >
@@ -91,12 +97,14 @@ export function Hero() {
             </h1>
 
             <p
+              data-reveal
+              data-delay="3"
               style={{
-                fontSize: "17px",
+                fontSize: "20px",
                 lineHeight: 1.65,
                 fontWeight: 300,
                 color: "var(--muted)",
-                maxWidth: "480px",
+                maxWidth: "576px",
                 margin: 0,
               }}
             >
@@ -106,12 +114,14 @@ export function Hero() {
 
           {/* Right: photo + name */}
           <div
+            data-reveal
+            data-delay="4"
             className="hero-photo"
             style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
           >
             <div
               style={{
-                width: "340px",
+                width: "408px",
                 borderRadius: "6px",
                 overflow: "hidden",
                 border: "1px solid var(--border)",
@@ -130,10 +140,10 @@ export function Hero() {
             <p
               style={{
                 fontFamily: "var(--font-display), serif",
-                fontSize: "45px",
+                fontSize: "54px",
                 fontWeight: 400,
                 color: "var(--text)",
-                margin: "24px 0 0",
+                margin: "29px 0 0",
                 letterSpacing: "-0.03em",
                 lineHeight: 1,
               }}
