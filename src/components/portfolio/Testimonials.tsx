@@ -6,7 +6,7 @@ import { SectionLabel } from "./SectionLabel";
 const testimonials = [
   {
     quote:
-      "Austin has this weird ability to just nail the voice. Whether it's a comment, a DM, or a full post — he writes stuff that actually sounds like a person, not a brand trying to sound like a person. He's fast too. I've seen him crank out a week's worth of copy in a sitting and every piece lands.",
+      "Austin has this knack to just nail the voice. Whether it's a comment, a DM or a full post — he writes stuff that actually sounds like a person, not just a brand.",
     name: "Kyle",
     role: "Team Lead, Social at Clearlink",
   },

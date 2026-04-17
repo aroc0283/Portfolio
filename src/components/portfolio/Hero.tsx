@@ -93,7 +93,7 @@ export function Hero() {
               <em style={{ color: "var(--accent)", fontStyle: "italic" }}>Less</em>{" "}
               guesswork.<br />
               <em style={{ color: "var(--accent)", fontStyle: "italic" }}>More</em>{" "}
-              framework. Building systems that scale social.
+              framework. Building systems that scale your social media.
             </h1>
 
             <p
