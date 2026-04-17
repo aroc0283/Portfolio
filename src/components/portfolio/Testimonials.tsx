@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     quote:
-      "Most people in social are either strategic thinkers or technical builders. Austin's both, and it's not close. He's built tools for our team that saved us real hours every week — not theoretical efficiency, actual time back.",
+      "You don't often find someone in social who is both a creative strategist and a hands-on builder, but Austin is. His custom tools actually give our team hours back every single week, making a genuine difference in our day-to-day.",
     name: "Hillary",
     role: "VP of Social at Clearlink",
   },
