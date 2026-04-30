@@ -63,7 +63,7 @@ function SettingsModal({ onClose }: { onClose: () => void }) {
         position: "fixed",
         inset: 0,
         zIndex: 999,
-        background: "rgba(0,0,0,0.75)",
+        background: "rgba(10,9,8,0.62)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -73,7 +73,7 @@ function SettingsModal({ onClose }: { onClose: () => void }) {
       <div
         onClick={(e) => e.stopPropagation()}
         style={{
-          background: "#141414",
+          background: "var(--bg)",
           border: "1px solid var(--border)",
           borderRadius: "8px",
           padding: "32px",
@@ -325,7 +325,7 @@ export function Contact() {
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLAnchorElement;
                 el.style.background = "var(--accent-hover)";
-                el.style.boxShadow = "0 0 40px rgba(212,120,47,0.2)";
+                el.style.boxShadow = "0 0 40px rgba(37,99,235,0.22)";
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget as HTMLAnchorElement;

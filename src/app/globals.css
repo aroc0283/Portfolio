@@ -2,17 +2,19 @@
 
 /* ─── Design Tokens ─── */
 :root {
-  --bg:           #141414;
-  --text:         #E8E4DF;
-  --accent:       #D4782F;
-  --accent-hover: #E8923A;
-  --muted:        rgba(232, 228, 223, 0.45);
-  --faint:        rgba(232, 228, 223, 0.25);
-  --border:       rgba(255, 255, 255, 0.06);
+  --bg:           #eeeef0;
+  --card:         #bebec0;
+  --text:         #000000;
+  --accent:       #2563eb;
+  --accent-hover: #3b82f6;
+  --muted:        rgba(0, 0, 0, 0.62);
+  --faint:        rgba(0, 0, 0, 0.32);
+  --border:       rgba(32, 32, 32, 0.12);
 }
 
 @theme inline {
   --color-bg:           var(--bg);
+  --color-card:         var(--card);
   --color-text:         var(--text);
   --color-accent:       var(--accent);
   --color-accent-hover: var(--accent-hover);
@@ -25,30 +27,31 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scrollbar-color: rgba(212, 120, 47, 0.2) #141414;
+  scrollbar-color: rgba(37, 99, 235, 0.36) #eeeef0;
   scrollbar-width: thin;
+  background-color: #eeeef0;
 }
 
 body {
-  background-color: var(--bg);
+  background-color: #eeeef0;
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background: #D4782F;
+  background: #2563eb;
   color: #141414;
 }
 
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
-  background: rgba(212, 120, 47, 0.25);
+  background: rgba(37, 99, 235, 0.25);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(212, 120, 47, 0.55);
+  background: rgba(37, 99, 235, 0.55);
 }
 
 /* ─── Container ─── */

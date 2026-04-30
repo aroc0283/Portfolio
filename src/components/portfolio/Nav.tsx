@@ -11,7 +11,7 @@ export function Nav() {
         left: 0,
         right: 0,
         zIndex: 50,
-        background: "rgba(10,10,10,0.8)",
+        background: "rgba(238,238,240,0.86)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
         borderBottom: "1px solid var(--border)",

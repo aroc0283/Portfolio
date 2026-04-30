@@ -19,7 +19,7 @@ export function ContactCTA() {
         overflow: "hidden",
       }}
     >
-      {/* Decorative orange glow behind the text */}
+      {/* Decorative blue glow behind the text */}
       <div
         aria-hidden="true"
         style={{
@@ -30,7 +30,7 @@ export function ContactCTA() {
           height: "50vw",
           maxWidth: "500px",
           maxHeight: "500px",
-          background: "radial-gradient(circle at center, rgba(249,94,20,0.1) 0%, transparent 65%)",
+          background: "radial-gradient(circle at center, rgba(37,99,235,0.1) 0%, transparent 65%)",
           filter: "blur(60px)",
           pointerEvents: "none",
           zIndex: 0,
