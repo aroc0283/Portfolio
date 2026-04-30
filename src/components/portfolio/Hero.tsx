@@ -31,9 +31,9 @@ export function Hero() {
         }}
       >
         <FlickeringGrid
-          color="rgb(37, 99, 235)"
-          maxOpacity={0.12}
-          flickerChance={0.08}
+          color="rgb(29, 78, 216)"
+          maxOpacity={0.22}
+          flickerChance={0.1}
           squareSize={4}
           gridGap={6}
         />
@@ -109,7 +109,7 @@ export function Hero() {
                 margin: 0,
               }}
             >
-              I&apos;m a social copywriter and workflow builder who helps brands reply faster, sound more human, and save hours on repetitive work.
+              I’m a social copywriter and workflow builder who helps brands respond faster, sound more human, and build repeatable systems for the messy, high-volume work behind social media and community management
             </p>
           </div>
 

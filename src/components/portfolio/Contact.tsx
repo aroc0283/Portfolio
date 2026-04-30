@@ -167,7 +167,7 @@ function SettingsModal({ onClose }: { onClose: () => void }) {
               onClick={addLink}
               style={{
                 background: "var(--accent)",
-                color: "#141414",
+                color: "#ffffff",
                 border: "none",
                 borderRadius: "4px",
                 padding: "10px 18px",
@@ -312,7 +312,7 @@ export function Contact() {
               style={{
                 display: "inline-block",
                 background: "var(--accent)",
-                color: "#141414",
+                color: "#ffffff",
                 fontSize: "13px",
                 textTransform: "uppercase",
                 letterSpacing: "0.08em",

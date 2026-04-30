@@ -78,7 +78,7 @@ function TestimonialCard({
         flexDirection: "column",
       }}
       onMouseEnter={(e) =>
-        ((e.currentTarget as HTMLDivElement).style.background = "#c9c9cb")
+        ((e.currentTarget as HTMLDivElement).style.background = "var(--card)")
       }
       onMouseLeave={(e) =>
         ((e.currentTarget as HTMLDivElement).style.background = "var(--card)")

@@ -75,7 +75,7 @@ function PillarCard({ pillar, delay }: { pillar: Pillar; delay: number }) {
         transition: "background 0.3s",
       }}
       onMouseEnter={(e) =>
-        ((e.currentTarget as HTMLDivElement).style.background = "#c9c9cb")
+        ((e.currentTarget as HTMLDivElement).style.background = "var(--card)")
       }
       onMouseLeave={(e) =>
         ((e.currentTarget as HTMLDivElement).style.background = "var(--card)")

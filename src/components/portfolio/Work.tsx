@@ -110,7 +110,11 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
       <div
         data-reveal
         data-delay={String(delay)}
-        style={{ borderTop: "1px solid var(--border)", transition: "border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1)", borderColor: hovered ? "rgba(37,99,235,0.2)" : undefined }}
+        style={{
+          borderTop: "1px solid var(--border)",
+          transition: "border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1)",
+          borderColor: hovered ? "rgba(37,99,235,0.2)" : undefined,
+        }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >

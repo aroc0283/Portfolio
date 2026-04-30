@@ -24,7 +24,7 @@ export function AmbientBackground() {
           height: "55vw",
           maxWidth: "620px",
           maxHeight: "620px",
-          background: "radial-gradient(circle at center, rgba(37,99,235,0.14) 0%, rgba(147,197,253,0.08) 45%, transparent 72%)",
+          background: "radial-gradient(circle at center, rgba(29,78,216,0.22) 0%, rgba(59,130,246,0.14) 45%, transparent 72%)",
           filter: "blur(50px)",
         }}
         initial={{ opacity: 0 }}
@@ -43,7 +43,7 @@ export function AmbientBackground() {
           height: "42vw",
           maxWidth: "480px",
           maxHeight: "480px",
-          background: "radial-gradient(circle at center, rgba(147,197,253,0.1) 0%, rgba(37,99,235,0.05) 50%, transparent 70%)",
+          background: "radial-gradient(circle at center, rgba(37,99,235,0.16) 0%, rgba(30,64,175,0.08) 50%, transparent 70%)",
           filter: "blur(60px)",
         }}
         initial={{ opacity: 0 }}
@@ -61,7 +61,7 @@ export function AmbientBackground() {
           height: "35vw",
           maxWidth: "400px",
           maxHeight: "400px",
-          background: "radial-gradient(circle at center, rgba(30,64,175,0.1) 0%, transparent 68%)",
+          background: "radial-gradient(circle at center, rgba(30,64,175,0.18) 0%, transparent 68%)",
           filter: "blur(70px)",
         }}
         initial={{ opacity: 0 }}
