@@ -70,7 +70,7 @@ function TestimonialCard({
       data-delay={String(delay)}
       style={{
         position: "relative",
-        background: "rgba(255,255,255,0.02)",
+        background: "var(--card)",
         padding: "36px 32px 32px",
         transition: "background 0.3s",
         overflow: "hidden",
@@ -78,10 +78,10 @@ function TestimonialCard({
         flexDirection: "column",
       }}
       onMouseEnter={(e) =>
-        ((e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.04)")
+        ((e.currentTarget as HTMLDivElement).style.background = "#c9c9cb")
       }
       onMouseLeave={(e) =>
-        ((e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.02)")
+        ((e.currentTarget as HTMLDivElement).style.background = "var(--card)")
       }
     >
       <span
@@ -93,7 +93,7 @@ function TestimonialCard({
           fontFamily: "var(--font-display), serif",
           fontSize: "64px",
           lineHeight: 1,
-          color: "rgba(212,120,47,0.12)",
+          color: "rgba(37,99,235,0.18)",
           pointerEvents: "none",
           userSelect: "none",
         }}
@@ -107,7 +107,7 @@ function TestimonialCard({
           fontSize: "18px",
           fontStyle: "italic",
           lineHeight: 1.6,
-          color: "rgba(232,228,223,0.7)",
+          color: "var(--text)",
           margin: "0 0 24px",
           padding: 0,
         }}
@@ -116,7 +116,7 @@ function TestimonialCard({
       </blockquote>
 
       <div style={{ marginTop: "auto" }}>
-        <p style={{ fontSize: "13px", color: "rgba(232,228,223,0.5)", margin: "0 0 4px" }}>
+        <p style={{ fontSize: "13px", color: "var(--muted)", margin: "0 0 4px" }}>
           {name}
         </p>
         <p style={{ fontSize: "12px", color: "var(--faint)", margin: 0 }}>

@@ -7,7 +7,7 @@ import { Contact } from "@/components/portfolio/Contact";
 
 export default function Page() {
   return (
-    <main>
+    <main style={{ background: "#eeeef0", minHeight: "100dvh" }}>
       <Link
         href="/alt"
         style={{
@@ -23,7 +23,7 @@ export default function Page() {
           borderRadius: "4px",
           padding: "6px 14px",
           textDecoration: "none",
-          background: "rgba(10,10,10,0.7)",
+          background: "rgba(238,238,240,0.78)",
           backdropFilter: "blur(10px)",
           transition: "color 0.2s, border-color 0.2s",
         }}

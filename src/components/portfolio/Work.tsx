@@ -62,8 +62,8 @@ function Thumbnail({ src, alt, onClick }: { src: string; alt: string; onClick: (
         borderRadius: "6px",
         overflow: "hidden",
         border: "1px solid",
-        borderColor: hovered ? "rgba(212,120,47,0.5)" : "var(--border)",
-        background: "rgba(255,255,255,0.02)",
+        borderColor: hovered ? "rgba(37,99,235,0.5)" : "var(--border)",
+        background: "var(--card)",
         cursor: "zoom-in",
         transition: "border-color 0.25s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s",
         transform: hovered ? "scale(1.04)" : "scale(1)",
@@ -110,7 +110,7 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
       <div
         data-reveal
         data-delay={String(delay)}
-        style={{ borderTop: "1px solid var(--border)", transition: "border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1)", borderColor: hovered ? "rgba(212,120,47,0.2)" : undefined }}
+        style={{ borderTop: "1px solid var(--border)", transition: "border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1)", borderColor: hovered ? "rgba(37,99,235,0.2)" : undefined }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
@@ -123,7 +123,7 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
             <p style={{ fontSize: "15px", lineHeight: 1.65, fontWeight: 300, color: "var(--muted)", maxWidth: "520px", margin: 0 }}>{blurb}</p>
           </div>
           <div className="project-card-meta" style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "10px", paddingTop: "6px" }}>
-            <span style={{ fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.08em", color: "rgba(212,120,47,0.6)", textAlign: "right" }}>{metric}</span>
+            <span style={{ fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.08em", color: "rgba(37,99,235,0.72)", textAlign: "right" }}>{metric}</span>
             <span style={{ fontSize: "10px", letterSpacing: "0.06em", color: "var(--faint)", border: "1px solid var(--border)", borderRadius: "999px", padding: "3px 10px", whiteSpace: "nowrap" }}>{status}</span>
           </div>
         </div>
