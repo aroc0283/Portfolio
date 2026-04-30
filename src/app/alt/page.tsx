@@ -11,7 +11,7 @@ export default function AltPage() {
   return (
     <main
       style={{
-        background: "var(--bg)",
+        background: "#eeeef0",
         minHeight: "100dvh",
         position: "relative",
         overflow: "hidden",
@@ -42,7 +42,7 @@ export default function AltPage() {
             borderRadius: "4px",
             padding: "6px 14px",
             textDecoration: "none",
-            background: "rgba(10,10,10,0.7)",
+            background: "rgba(238,238,240,0.78)",
             backdropFilter: "blur(10px)",
           }}
         >

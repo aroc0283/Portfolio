@@ -14,6 +14,7 @@ export function Hero() {
         minHeight: "100dvh",
         display: "flex",
         flexDirection: "column",
+        background: "#eeeef0",
       }}
     >
       {/* Flickering grid background — extends below hero and fades out */}
@@ -30,7 +31,7 @@ export function Hero() {
         }}
       >
         <FlickeringGrid
-          color="rgb(212, 120, 47)"
+          color="rgb(37, 99, 235)"
           maxOpacity={0.12}
           flickerChance={0.08}
           squareSize={4}
@@ -108,7 +109,7 @@ export function Hero() {
                 margin: 0,
               }}
             >
-              Forward-thinking social copywriter and strategist building bespoke applications to solve complex community challenges. Leveraging AI tooling and social intelligence to create scalable systems that amplify brand impact.
+              I&apos;m a social copywriter and workflow builder who helps brands reply faster, sound more human, and save hours on repetitive work.
             </p>
           </div>
 

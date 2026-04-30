@@ -70,15 +70,15 @@ function PillarCard({ pillar, delay }: { pillar: Pillar; delay: number }) {
       data-reveal
       data-delay={String(delay)}
       style={{
-        background: "rgba(255,255,255,0.015)",
+        background: "var(--card)",
         padding: "36px 32px",
         transition: "background 0.3s",
       }}
       onMouseEnter={(e) =>
-        ((e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.03)")
+        ((e.currentTarget as HTMLDivElement).style.background = "#c9c9cb")
       }
       onMouseLeave={(e) =>
-        ((e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.015)")
+        ((e.currentTarget as HTMLDivElement).style.background = "var(--card)")
       }
     >
       <span
@@ -87,7 +87,7 @@ function PillarCard({ pillar, delay }: { pillar: Pillar; delay: number }) {
           fontSize: "11px",
           textTransform: "uppercase",
           letterSpacing: "0.12em",
-          color: "rgba(212,120,47,0.6)",
+          color: "rgba(37,99,235,0.72)",
           marginBottom: "16px",
         }}
       >

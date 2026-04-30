@@ -49,7 +49,7 @@ export function SectionTabs({ activeSection, onSelect, config }: SectionTabsProp
                       fontSize: "9px",
                       fontWeight: 600,
                       backgroundColor: isActive
-                        ? "rgba(255,181,154,0.15)"
+                        ? "rgba(147,197,253,0.22)"
                         : "rgba(255,255,255,0.06)",
                       color: isActive ? "var(--primary)" : "var(--on-surface-faint)",
                     }}
